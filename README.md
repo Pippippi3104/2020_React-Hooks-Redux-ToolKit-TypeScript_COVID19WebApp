@@ -1,1 +1,1 @@
-# 2020_React-Hooks-Redux-ToolKit-TypeScript_COVID19WebApp
+# 2020_React Hooks + Redux ToolKit + TypeScript を使って、COVID19 (コロナウイルス)ダッシュボードWebアプリを作ります。
