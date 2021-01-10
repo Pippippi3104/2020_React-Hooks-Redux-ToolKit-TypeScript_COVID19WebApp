@@ -22,4 +22,4 @@ const LinePlot : React.FC = () => {
     );
 };
 
-export default LinePlot
+export default LinePlot;
