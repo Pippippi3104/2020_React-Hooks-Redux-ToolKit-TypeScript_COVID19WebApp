@@ -1,12 +1,12 @@
 ## Pickup
-* React-Chart js
+* [React-Chart js](https://github.com/reactchartjs/react-chartjs-2)
   * Line Chart
   * Pie Chart
   * Bar Chart
   * Radar Chart
   * Bubble Chart
 
-* Material UI
+* [Material UI](https://material-ui.com/)
   * Button
   * makeStyles
   * Typography
