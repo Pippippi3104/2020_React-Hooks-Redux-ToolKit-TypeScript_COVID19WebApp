@@ -106,7 +106,7 @@ export const fetchAsyncGetCountry = createAsyncThunk("covid/getCountry", async (
     return { data: data, country: country };
 });
 
-/*  */
+/* store */
 const covidSlice = createSlice({
     name: "covid",
     initialState: initialState,
