@@ -5,3 +5,5 @@
   * Section02
 * v0.3.0
   * Section03
+* v0.4.0
+  * Section04
