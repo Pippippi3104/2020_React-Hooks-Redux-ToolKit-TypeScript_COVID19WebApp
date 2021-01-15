@@ -52,7 +52,7 @@ const Cards: React.FC = () => {
                 <Grid item xs={12} md={3} component={Card} className="deaths">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            <AiFillLike />
+                            <GiHastyGrave />
                             Dead persons
                         </Typography>
                         <Typography variant="h5">
