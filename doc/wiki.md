@@ -16,5 +16,7 @@
 
 * [A free API for data on the Coronavirus](https://covid19api.com/)
 
+* [完成したWebページ](https://covid-dashboard-api-1107f.web.app/)
+
 ## Note
 * use "rafce"
