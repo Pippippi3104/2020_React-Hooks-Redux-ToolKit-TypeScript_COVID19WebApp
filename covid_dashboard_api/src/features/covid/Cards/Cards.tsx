@@ -1,19 +1,20 @@
 import React from 'react'
 import "./Cards.modules.css";
 import CountUp from "react-countup";
-import { Card, CardContent, Typography, Grid, Container } from "@material-ui/core";
+import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 
-/* icons */
+/* icon */
 import { GiHastyGrave } from "react-icons/gi";
 import { MdLocalHospital } from "react-icons/md";
 import { AiFillLike } from "react-icons/ai";
 
-/* Redux */
+/* redux */
 import { useSelector } from "react-redux";
-import { selectData } from "../covidSlice";
+import { selectDaily } from "../covidSlice";
 
-const Cards: React.FC = () => {
-    const data = useSelector(selectData);
+const Cards : React.FC = () => {
+    const daily = useSelector(selectDaily);
+
     return (
         <div className="container">
             <Grid container spacing={1} justify="center">
@@ -26,7 +27,7 @@ const Cards: React.FC = () => {
                         <Typography variant="h5">
                             <CountUp 
                                 start={0}
-                                end={data.confirmed.value}
+                                end={daily[daily.length - 1].Confirmed}
                                 duration={1.5}
                                 separator=","
                             />
@@ -36,13 +37,13 @@ const Cards: React.FC = () => {
                 <Grid item xs={12} md={3} component={Card} className="recovered">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            <AiFillLike />
+                            <MdLocalHospital />
                             Recovered persons
                         </Typography>
                         <Typography variant="h5">
                             <CountUp 
                                 start={0}
-                                end={data.recovered.value}
+                                end={daily[daily.length - 1].Recovered}
                                 duration={1.5}
                                 separator=","
                             />
@@ -52,13 +53,13 @@ const Cards: React.FC = () => {
                 <Grid item xs={12} md={3} component={Card} className="deaths">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            <GiHastyGrave />
+                            <MdLocalHospital />
                             Dead persons
                         </Typography>
                         <Typography variant="h5">
                             <CountUp 
                                 start={0}
-                                end={data.deaths.value}
+                                end={daily[daily.length - 1].Deaths}
                                 duration={1.5}
                                 separator=","
                             />
